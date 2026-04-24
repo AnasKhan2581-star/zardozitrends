@@ -3,372 +3,1169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pakistani Zardozi Bridal Wear — 2026 Trends</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Zardozi Bridal Trends 2026 — Pakistani Couture Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
     --gold: #C9A84C;
-    --gold-light: #E8C97A;
-    --gold-dim: #8B6914;
-    --dark: #0D0A06;
-    --dark2: #18130C;
-    --dark3: #221A10;
-    --cream: #F5EDD8;
-    --cream2: #EAD9B8;
-    --text: #D4C5A0;
-    --text-dim: #8A7A5A;
+    --deep-gold: #A67C2E;
+    --cream: #FAF6EE;
+    --ivory: #F5EDD8;
+    --dark: #1A1208;
+    --maroon: #6B1A2A;
+    --emerald: #1A4A35;
+    --plum: #4A1A3A;
+    --text: #2C1F0A;
+    --muted: #7A6045;
+    --border: rgba(201,168,76,0.3);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    background: var(--dark);
+    background: var(--cream);
     color: var(--text);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
     line-height: 1.7;
     overflow-x: hidden;
   }
 
-  /* ── HERO ── */
+  /* HERO */
   .hero {
-    position: relative;
-    text-align: center;
-    padding: 90px 20px 70px;
-    background: radial-gradient(ellipse at 50% 0%, #2A1E08 0%, var(--dark) 70%);
-    border-bottom: 1px solid #2E2010;
-  }
-  .hero-eyebrow {
-    font-family: 'Raleway', sans-serif;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 18px;
-  }
-  .hero h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(36px, 6vw, 72px);
-    font-weight: 300;
-    line-height: 1.1;
-    color: var(--cream);
-    margin-bottom: 10px;
-  }
-  .hero h1 em { font-style: italic; color: var(--gold-light); }
-  .hero-sub {
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: var(--text-dim);
-    margin-top: 14px;
-  }
-  .divider-ornament {
+    min-height: 100vh;
+    background: linear-gradient(160deg, #0D0803 0%, #1A1208 40%, #2C1F0A 100%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 14px;
-    margin: 36px auto 0;
-    max-width: 300px;
+    text-align: center;
+    position: relative;
+    padding: 60px 30px;
+    overflow: hidden;
   }
-  .divider-ornament span { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-dim)); }
-  .divider-ornament span:last-child { background: linear-gradient(90deg, var(--gold-dim), transparent); }
-  
-  /* ── SECTION HEADERS ── */
-  section { padding: 70px 20px; max-width: 1200px; margin: 0 auto; }
-  .section-label {
-    font-size: 10px;
-    letter-spacing: 5px;
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse 60% 40% at 50% 60%, rgba(201,168,76,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 80% 60% at 20% 20%, rgba(107,26,42,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 80% 80%, rgba(26,74,53,0.1) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* Decorative geometric */
+  .hero-deco {
+    position: absolute;
+    inset: 20px;
+    border: 1px solid rgba(201,168,76,0.15);
+    pointer-events: none;
+  }
+  .hero-deco::before, .hero-deco::after {
+    content: '';
+    position: absolute;
+    width: 60px; height: 60px;
+    border: 1px solid rgba(201,168,76,0.3);
+  }
+  .hero-deco::before { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+  .hero-deco::after { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+  .hero-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 6px;
     text-transform: uppercase;
     color: var(--gold);
-    margin-bottom: 8px;
+    margin-bottom: 28px;
+    opacity: 0;
+    animation: fadeUp 1s 0.2s forwards;
   }
+
+  .hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(38px, 7vw, 90px);
+    font-weight: 400;
+    color: var(--cream);
+    line-height: 1.05;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    opacity: 0;
+    animation: fadeUp 1s 0.4s forwards;
+  }
+
+  .hero h1 em {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(48px, 9vw, 110px);
+    color: var(--gold);
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    color: rgba(250,246,238,0.65);
+    max-width: 520px;
+    margin: 20px auto 0;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeUp 1s 0.6s forwards;
+  }
+
+  .hero-line {
+    width: 80px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 32px auto;
+    opacity: 0;
+    animation: fadeUp 1s 0.8s forwards;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(201,168,76,0.5);
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-family: 'Cinzel', serif;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.4; } 50% { opacity: 0.9; }
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 90px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+    display: block;
+  }
+
   .section-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(28px, 4vw, 44px);
+    font-size: clamp(32px, 5vw, 52px);
     font-weight: 300;
-    color: var(--cream);
+    color: var(--dark);
+    line-height: 1.15;
     margin-bottom: 40px;
-    line-height: 1.2;
   }
-  .section-title em { font-style: italic; color: var(--gold-light); }
+  .section-title em { font-style: italic; color: var(--deep-gold); }
 
-  /* ── COLOR PALETTE GRID ── */
-  .color-grid {
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 0;
+  }
+
+  /* INTRO PARAGRAPH */
+  .intro-band {
+    background: var(--dark);
+    color: var(--cream);
+    padding: 70px 40px;
+    text-align: center;
+  }
+  .intro-band p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 19px;
+    font-style: italic;
+    line-height: 1.9;
+    color: rgba(250,246,238,0.82);
+  }
+  .intro-band p strong {
+    color: var(--gold);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* COLORS SECTION */
+  .colors-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    border: 1px solid var(--border);
   }
+
+  @media (max-width: 900px) {
+    .colors-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 500px) {
+    .colors-grid { grid-template-columns: 1fr; }
+  }
+
   .color-card {
-    border-radius: 4px;
-    overflow: hidden;
-    border: 1px solid #2A1E0A;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-  }
-  .color-card:hover { transform: translateY(-4px); border-color: var(--gold-dim); }
-  .color-swatch {
-    height: 220px; 
     position: relative;
-    display: flex;
-    align-items: flex-end;
-    padding: 10px 12px;
-    background-color: var(--dark2);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-image 0.5s ease;
+    overflow: hidden;
+    cursor: default;
+    transition: transform 0.4s ease;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
+
+  .color-card:nth-child(5n) { border-right: none; }
+  .color-card:nth-last-child(-n+5) { border-bottom: none; }
+
+  .color-swatch {
+    height: 180px;
+    position: relative;
+  }
+
+  .color-card:hover .color-swatch::after {
+    opacity: 1;
+  }
+
   .color-swatch::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 50%);
-    pointer-events: none;
+    background: rgba(0,0,0,0.15);
+    opacity: 0;
+    transition: opacity 0.3s;
   }
-  .zardozi-badge {
+
+  .color-info {
+    padding: 18px 16px 22px;
+    background: white;
+    border-top: 1px solid var(--border);
+  }
+
+  .color-name {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--dark);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .color-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  .color-badge {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 2px 8px;
+    background: var(--ivory);
+    border: 1px solid var(--border);
+    font-family: 'Cinzel', serif;
     font-size: 9px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    background: rgba(0,0,0,0.6);
-    color: var(--gold-light);
-    padding: 3px 8px;
-    border-radius: 2px;
-    position: relative;
-    z-index: 1;
-    border: 1px solid var(--gold-dim);
+    color: var(--muted);
   }
-  .color-info {
-    background: var(--dark2);
-    padding: 14px 16px;
-  }
-  .color-number { font-size: 10px; color: var(--gold-dim); letter-spacing: 2px; margin-bottom: 4px; }
-  .color-name { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--cream); margin-bottom: 6px; }
-  .color-desc { font-size: 11px; color: var(--text-dim); line-height: 1.5; }
 
-  /* ── FABRIC SECTION ── */
-  .fabric-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 20px;
+  /* FABRICS */
+  .fabrics-bg {
+    background: #0D0803;
+    padding: 90px 40px;
   }
+  .fabrics-bg .section-label { color: var(--gold); }
+  .fabrics-bg .section-title { color: var(--cream); }
+  .fabrics-bg .section-title em { color: var(--gold); }
+
+  .fabrics-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 900px) {
+    .fabrics-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
   .fabric-card {
-    background: var(--dark2);
-    border: 1px solid #2A1E0A;
-    border-radius: 4px;
+    border: 1px solid rgba(201,168,76,0.2);
+    padding: 28px 20px;
+    text-align: center;
+    transition: border-color 0.3s, background 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fabric-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(201,168,76,0.04) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .fabric-card:hover {
+    border-color: rgba(201,168,76,0.6);
+    background: rgba(201,168,76,0.04);
+  }
+
+  .fabric-icon {
+    font-size: 32px;
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  .fabric-name {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+
+  .fabric-desc {
+    font-size: 13px;
+    color: rgba(250,246,238,0.6);
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  .fabric-tag {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 3px 10px;
+    border: 1px solid rgba(201,168,76,0.25);
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-family: 'Cinzel', serif;
+    color: rgba(201,168,76,0.7);
+    text-transform: uppercase;
+  }
+
+  /* DRESS EXAMPLES */
+  .dresses-section {
+    padding: 90px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .dresses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  @media (max-width: 768px) {
+    .dresses-grid { grid-template-columns: 1fr; }
+  }
+
+  .dress-card {
+    background: var(--cream);
     overflow: hidden;
     position: relative;
+    transition: transform 0.3s;
   }
-  .fabric-card::before {
-    content: attr(data-num);
-    position: absolute;
-    top: -5px; right: 16px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 72px; font-weight: 300; color: rgba(201,168,76,0.08);
-    z-index: 2; pointer-events: none;
-  }
-  .fabric-visual {
-    height: 160px;
-    background-color: var(--dark3);
-    background-size: cover;
-    background-position: center;
-    border-bottom: 1px solid #2A1E0A;
-  }
-  .fabric-info { padding: 24px 20px; }
-  .fabric-name { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--cream); margin-bottom: 8px; }
-  .fabric-desc { font-size: 12px; color: var(--text-dim); line-height: 1.6; }
-  .fabric-tag { display: inline-block; margin-top: 12px; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold-dim); padding: 3px 8px; border-radius: 2px; }
 
-  /* ── DRESS EXAMPLES ── */
-  .dress-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-  }
-  .dress-card {
-    border: 1px solid #2A1E0A;
-    border-radius: 4px;
-    overflow: hidden;
-    background: var(--dark2);
-    display: block;
-    text-decoration: none;
-    transition: transform 0.3s, border-color 0.3s;
-  }
-  .dress-card:hover { transform: translateY(-4px); border-color: var(--gold); }
+  .dress-card:hover { z-index: 2; transform: scale(1.01); }
+
   .dress-visual {
     height: 280px;
-    background-color: var(--dark3);
-    background-size: cover;
-    background-position: center;
-    border-bottom: 1px solid #2A1E0A;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
-  .dress-info { padding: 18px 20px; }
-  .dress-color-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 8px; vertical-align: middle; }
-  .dress-color-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); vertical-align: middle; }
-  .dress-name { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--cream); margin: 6px 0 8px; }
-  .dress-detail { font-size: 11px; color: var(--text-dim); line-height: 1.6; }
 
-  /* ── FOOTER ── */
-  .designer-mentions { text-align: center; padding: 40px 20px; border-top: 1px solid #1E1508; }
-  .designer-mentions h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--cream); margin-bottom: 10px; }
-  .designer-mentions p { font-size: 12px; color: var(--text-dim); line-height: 1.8; }
-  .designer-mentions strong { color: var(--gold); }
-  footer { text-align: center; padding: 30px 20px 50px; font-size: 11px; color: var(--text-dim); }
+  /* Illustrated dress silhouettes via CSS */
+  .dress-visual svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  }
+
+  .dress-info {
+    padding: 22px 24px 28px;
+    border-top: 1px solid var(--border);
+  }
+
+  .dress-number {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .dress-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--dark);
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .dress-name em { font-style: italic; color: var(--deep-gold); }
+
+  .dress-color-dot {
+    display: inline-block;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  .dress-details {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+    margin-top: 8px;
+  }
+
+  .dress-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 2px;
+    transition: color 0.2s;
+  }
+  .dress-link:hover { color: var(--deep-gold); }
+
+  /* FOOTER */
+  footer {
+    background: #0D0803;
+    padding: 60px 40px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(201,168,76,0.2);
+  }
+
+  .footer-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    letter-spacing: 6px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .footer-research {
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
+
+  .footer-research h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: rgba(201,168,76,0.6);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .designer-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .designer-list li {
+    font-size: 13px;
+    color: rgba(250,246,238,0.45);
+    font-style: italic;
+    position: relative;
+  }
+
+  .designer-list li:not(:last-child)::after {
+    content: '·';
+    position: absolute;
+    right: -12px;
+    color: rgba(201,168,76,0.3);
+  }
+
+  .footer-note {
+    font-size: 12px;
+    color: rgba(250,246,238,0.25);
+    margin-top: 30px;
+    letter-spacing: 1px;
+  }
+
+  /* ORNAMENT */
+  .ornament {
+    text-align: center;
+    color: var(--gold);
+    opacity: 0.4;
+    font-size: 20px;
+    margin: 20px 0;
+    letter-spacing: 12px;
+  }
+
+  /* INTRO TEXT BLOCK */
+  .intro-text-block {
+    max-width: 780px;
+    margin: 0 auto 60px;
+  }
+
+  .intro-text-block p {
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 16px;
+  }
+
+  /* Hover animation for color cards */
+  .color-card {
+    transition: box-shadow 0.3s;
+  }
+  .color-card:hover {
+    box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+  }
+
+  /* Stagger animation on load */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 </style>
 </head>
 <body>
 
-<div class="hero">
-  <div class="hero-eyebrow">2026 Couture Intelligence · Zardozi Bridal Edition</div>
-  <h1>Pakistani <em>Zardozi</em><br>Bridal Wear</h1>
-  <p class="hero-sub">Trending Colors · Trending Fabrics · 50 Dress Styles</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-deco"></div>
+  <p class="hero-eyebrow">Pakistani Couture · 2026 Trends Report</p>
+  <h1>
+    Zardozi
+    <em>Bridal</em>
+  </h1>
+  <div class="hero-line"></div>
+  <p class="hero-sub">10 Trending Colors & Fabrics Dominating Pakistani Bridal Collections in 2026</p>
+  <div class="scroll-hint">↓ &nbsp; SCROLL</div>
+</section>
+
+<!-- INTRO BAND -->
+<div class="intro-band">
+  <p>In 2026, Pakistani bridal zardozi wear is defined by the <strong>Grand Minimalist</strong> — regal silhouettes with cleaner embellishment, textiles that photograph beautifully, and color stories that balance heritage with modernity. The needle and thread traditions of Lahore's Mochi Gate ateliers remain at the heart of it all.</p>
 </div>
 
-<section>
-  <div class="section-label">Section 01 · Colour Stories</div>
-  <h2 class="section-title">10 Trending <em>Zardozi</em> Colours in 2026</h2>
-  <div class="color-grid" id="color-container"></div>
+<!-- COLORS SECTION -->
+<div class="divider"></div>
+<section class="section">
+  <span class="section-label">Trend Report · Colors</span>
+  <h2 class="section-title">10 Trending <em>Bridal Colors</em></h2>
+  <div class="intro-text-block">
+    <p>Drawn from the latest 2026 collections of Pakistan's foremost bridal couturiers, these are the ten colors brides are choosing for their zardozi ensembles this season — from the timeless classics reimagined to fresh pastels entering bridal territory for the first time.</p>
+  </div>
 </section>
 
-<section>
-  <div class="section-label">Section 02 · Fabric Intelligence</div>
-  <h2 class="section-title">10 Trending <em>Fabrics</em> for Zardozi Bridal 2026</h2>
-  <div class="fabric-grid" id="fabric-container"></div>
-</section>
+<div class="colors-grid fade-in">
 
-<section>
-  <div class="section-label">Section 03 · Dress Examples</div>
-  <h2 class="section-title">50 Zardozi <em>Dress Styles</em></h2>
-  <div class="dress-grid" id="dresses-container"></div>
-</section>
+  <!-- 1 Antique Red -->
+  <div class="color-card">
+    <div class="color-swatch" style="background: linear-gradient(145deg, #8B1A24, #6B1A2A, #4A0D18);"></div>
+    <div class="color-info">
+      <div class="color-name">Antique Red</div>
+      <div class="color-desc">Deep, aged crimson — richer than classic red. The evolved shade of barat tradition.</div>
+      <span class="color-badge">Barat · Signature</span>
+    </div>
+  </div>
 
-<div class="designer-mentions">
-  <h3>The Couture Architects of 2026</h3>
-  <p>Top designers defining the 2026 Zardozi landscape include <strong>HSY</strong>, <strong>Sadaf Fawad Khan</strong>, <strong>Saira Shakira</strong>, <strong>Nameera by Farooq</strong>, <strong>UY Collection</strong>, <strong>Shazia Yasin</strong>, <strong>AÏNN London</strong>, and the legendary <strong>Bunto Kazmi</strong>.</p>
+  <!-- 2 Champagne Ivory -->
+  <div class="color-card">
+    <div class="color-swatch" style="background: linear-gradient(145deg, #F5EDD8, #EDE0C4, #DDD0B0);"></div>
+    <div class="color-info">
+      <div class="color-name">Champagne Ivory</div>
+      <div class="color-desc">Warm off-white with golden undertones — the nikkah shade of 2026.</div>
+      <span class="color-badge">Nikkah · Walima</span>
+    </div>
+  </div>
+
+  <!-- 3 Deep Emerald -->
+  <div class="color-card">
+    <div class="color-swatch" style="background: linear-gradient(145deg, #1A4A35, #0E3326, #0A2218);"></div>
+    <div class="color-info">
+      <div class="color-name">Deep Emerald</div>
+      <div class="color-desc">Jewel-tone forest green — dominant in velvet winter bridal collections.</div>
+      <span class="color-badge">Winter · Velvet</span>
+    </div>
+  </div>
+
+  <!-- 4 Blush Petal -->
+  <div class="color-card">
+    <div class="color-swatch" style="background: linear-gradient(145deg, #F2C4CE, #E8AABB, #D990A8);"></div>
+    <div class="color-info">
+      <div class="color-name">Blush Petal</div>
+      <div class="color-desc">Soft rose-pink. Brides embrace it for walima and intimate nikah events.</div>
+      <span class="color-badge">Walima · Daytime</span>
+    </div>
+  </div>
+
+  <!-- 5 Royal Plum -->
+  <div class="color-card">
+    <div class="color-swatch" style="background: linear-gradient(145deg, #5C1A4A, #4A1A3A, #30102A);"></div>
+    <div class="color-info">
+      <div class="color-name">Royal Plum</div>
+      <div class="color-desc">Dark berry-purple. Rising fast for evening baraat looks on velvet.</div>
+      <span class="color-badge">Evening · Velvet</span>
+    </div>
+  </div>
+
+  <!-- 6 Maroon Wine -->
+  <div class="color-card">
+    <div class="color-swatch" style="background: linear-gradient(145deg, #7A2030, #5C1525, #3E0E18);"></div>
+    <div class="color-info">
+      <div class="color-name">Maroon Wine</div>
+      <div class="color-desc">Evolved from classic red — deeper, more sophisticated. A 2026 classic.</div>
+      <span class="color-badge">Barat · Heritage</span>
+    </div>
+  </div>
+
+  <!-- 7 Antique Gold -->
+  <div class="color-card">
+    <div class="color-swatch" style="background: linear-gradient(145deg, #C9A84C, #A67C2E, #7A5820);"></div>
+    <div class="color-info">
+      <div class="color-name">Antique Gold</div>
+      <div class="color-desc">Burnished tilla-gold tone as the main body color — not just embroidery.</div>
+      <span class="color-badge">Statement · All Events</span>
+    </div>
+  </div>
+
+  <!-- 8 Nude Fawn -->
+  <div class="color-card">
+    <div class="color-swatch" style="background: linear-gradient(145deg, #D4B896, #C4A07A, #B08A60);"></div>
+    <div class="color-info">
+      <div class="color-name">Nude Fawn</div>
+      <div class="color-desc">Warm beige-nude — Faraz Manan's signature. Lets zardozi embroidery speak.</div>
+      <span class="color-badge">Nikkah · Minimal</span>
+    </div>
+  </div>
+
+  <!-- 9 Magenta Rose -->
+  <div class="color-card">
+    <div class="color-swatch" style="background: linear-gradient(145deg, #C0306A, #A0245A, #7A1848);"></div>
+    <div class="color-info">
+      <div class="color-name">Magenta Rose</div>
+      <div class="color-desc">Bold raspberry-fuchsia — heirloom of South Asian bridal heritage, resurgent in 2026.</div>
+      <span class="color-badge">Baraat · Bold</span>
+    </div>
+  </div>
+
+  <!-- 10 Mint Sage -->
+  <div class="color-card">
+    <div class="color-swatch" style="background: linear-gradient(145deg, #8FC4A8, #6AAE90, #4A9278);"></div>
+    <div class="color-info">
+      <div class="color-name">Mint Sage</div>
+      <div class="color-desc">Cool mint entering bridal for the first time — pastel revolution in organza & jamawar.</div>
+      <span class="color-badge">Nikkah · Fresh</span>
+    </div>
+  </div>
+
 </div>
-<footer><p>All data sourced exclusively from 2026 Couture Collections</p></footer>
+
+<!-- FABRICS -->
+<div class="fabrics-bg">
+  <div style="max-width:1200px;margin:0 auto;">
+    <span class="section-label">Trend Report · Textiles</span>
+    <h2 class="section-title">10 Trending <em>Zardozi Fabrics</em></h2>
+    <p style="color:rgba(250,246,238,0.55);font-style:italic;font-size:16px;margin-bottom:44px;max-width:640px;">The right fabric is not decoration — it is architecture. These are the ten textiles carrying the heaviest, most opulent zardozi work in Pakistani bridal couture this season.</p>
+    <div class="fabrics-grid fade-in">
+
+      <div class="fabric-card">
+        <span class="fabric-icon">🧵</span>
+        <div class="fabric-name">Raw Silk</div>
+        <div class="fabric-desc">The #1 fabric for barat lehengas. Its nubby texture makes zardozi "pop" in photography.</div>
+        <span class="fabric-tag">Best for Barat</span>
+      </div>
+
+      <div class="fabric-card">
+        <span class="fabric-icon">✨</span>
+        <div class="fabric-name">Pure Organza</div>
+        <div class="fabric-desc">Stiff enough for cathedral trails, sheer enough to catch golden light. Outdoor brides' first choice.</div>
+        <span class="fabric-tag">Best Outdoors</span>
+      </div>
+
+      <div class="fabric-card">
+        <span class="fabric-icon">👑</span>
+        <div class="fabric-name">Velvet</div>
+        <div class="fabric-desc">Absorbs light to emphasize tilla depth. Dominant for winter baraat in jewel tones.</div>
+        <span class="fabric-tag">Winter Wedding</span>
+      </div>
+
+      <div class="fabric-card">
+        <span class="fabric-icon">🌿</span>
+        <div class="fabric-name">Jamawar</div>
+        <div class="fabric-desc">Traditional brocade woven in Persia-inspired motifs. Gharara and sharara staple for 2026.</div>
+        <span class="fabric-tag">Heritage Classic</span>
+      </div>
+
+      <div class="fabric-card">
+        <span class="fabric-icon">🌙</span>
+        <div class="fabric-name">Tissue Lamé</div>
+        <div class="fabric-desc">Metallic-threaded tissue — the most luminous fabric. Worn by the bride who wants to glow.</div>
+        <span class="fabric-tag">Statement Glow</span>
+      </div>
+
+      <div class="fabric-card">
+        <span class="fabric-icon">🕊️</span>
+        <div class="fabric-name">Liquid Chiffon</div>
+        <div class="fabric-desc">Feather-light and breathable. Carries thousands of embellishments without weight penalty.</div>
+        <span class="fabric-tag">Summer Brides</span>
+      </div>
+
+      <div class="fabric-card">
+        <span class="fabric-icon">🌾</span>
+        <div class="fabric-name">Banarsi Silk</div>
+        <div class="fabric-desc">Woven with zari threads. Its inherent sheen means even light zardozi reads as heavy couture.</div>
+        <span class="fabric-tag">Regal Heritage</span>
+      </div>
+
+      <div class="fabric-card">
+        <span class="fabric-icon">💎</span>
+        <div class="fabric-name">Kattan Silk</div>
+        <div class="fabric-desc">Ultra-smooth, structured silk favored by Nainpreet and Bunto Kazmi for gharara bottoms.</div>
+        <span class="fabric-tag">Gharara · Sharara</span>
+      </div>
+
+      <div class="fabric-card">
+        <span class="fabric-icon">🌸</span>
+        <div class="fabric-name">Mysori Net</div>
+        <div class="fabric-desc">Semi-sheer mesh base — delicate for layering over silk with all-over jaal zardozi work.</div>
+        <span class="fabric-tag">Jaal Embroidery</span>
+      </div>
+
+      <div class="fabric-card">
+        <span class="fabric-icon">🏺</span>
+        <div class="fabric-name">Crinkle Silk</div>
+        <div class="fabric-desc">Textured silk with natural wrinkle. Creates movement in farshi lehenga skirts at every step.</div>
+        <span class="fabric-tag">Farshi · Drama</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- DRESS EXAMPLES -->
+<div class="divider"></div>
+<section class="dresses-section">
+  <span class="section-label">Style Gallery · Examples</span>
+  <h2 class="section-title">10 <em>Zardozi Bridal</em> Silhouettes</h2>
+  <p style="color:var(--muted);font-style:italic;font-size:16px;max-width:620px;margin-bottom:44px;line-height:1.8;">Click any look to explore the designer's live collection. All linked directly to Pakistani designer websites.</p>
+
+  <div class="dresses-grid fade-in">
+
+    <!-- 1 -->
+    <div class="dress-card">
+      <div class="dress-visual" style="background: linear-gradient(160deg, #3E0E18 0%, #6B1A2A 60%, #8B1A24 100%);">
+        <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Lehenga silhouette -->
+          <ellipse cx="100" cy="220" rx="65" ry="50" fill="rgba(201,168,76,0.08)"/>
+          <!-- Skirt flare -->
+          <path d="M60 130 Q30 200 35 270 L165 270 Q170 200 140 130 Z" fill="rgba(139,26,36,0.7)" stroke="rgba(201,168,76,0.4)" stroke-width="0.5"/>
+          <!-- Choli -->
+          <path d="M72 95 Q72 80 100 78 Q128 80 128 95 L125 130 Q100 140 75 130 Z" fill="rgba(107,26,42,0.9)" stroke="rgba(201,168,76,0.5)" stroke-width="0.5"/>
+          <!-- Zardozi pattern on choli -->
+          <circle cx="100" cy="100" r="8" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="0.8"/>
+          <circle cx="100" cy="100" r="4" fill="rgba(201,168,76,0.4)"/>
+          <circle cx="86" cy="108" r="3" fill="rgba(201,168,76,0.3)"/>
+          <circle cx="114" cy="108" r="3" fill="rgba(201,168,76,0.3)"/>
+          <!-- Border on skirt -->
+          <path d="M35 240 Q100 248 165 240" stroke="rgba(201,168,76,0.6)" stroke-width="1.5" fill="none"/>
+          <path d="M38 246 Q100 254 162 246" stroke="rgba(201,168,76,0.3)" stroke-width="0.8" fill="none"/>
+          <!-- Dupatta -->
+          <path d="M55 90 Q20 110 15 180" stroke="rgba(201,168,76,0.25)" stroke-width="12" fill="none" stroke-linecap="round"/>
+          <!-- Neck -->
+          <ellipse cx="100" cy="74" rx="10" ry="7" fill="rgba(220,190,160,0.6)"/>
+          <!-- Jhumka earrings -->
+          <line x1="86" y1="74" x2="86" y2="86" stroke="rgba(201,168,76,0.7)" stroke-width="0.8"/>
+          <circle cx="86" cy="88" r="4" fill="rgba(201,168,76,0.5)"/>
+          <line x1="114" y1="74" x2="114" y2="86" stroke="rgba(201,168,76,0.7)" stroke-width="0.8"/>
+          <circle cx="114" cy="88" r="4" fill="rgba(201,168,76,0.5)"/>
+        </svg>
+      </div>
+      <div class="dress-info">
+        <div class="dress-number">Look 01</div>
+        <div class="dress-name">Crimson Silk <em>Lehenga Choli</em></div>
+        <div class="dress-details"><span class="dress-color-dot" style="background:#6B1A2A;"></span>Antique Red · Raw Silk · Full Zardozi · Kora & Dabka border</div>
+        <a class="dress-link" href="https://www.nameerabyfarooq.com/collections/pakistani-bridal-dresses" target="_blank">View at Nameera by Farooq ↗</a>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="dress-card">
+      <div class="dress-visual" style="background: linear-gradient(160deg, #0A2218 0%, #1A4A35 60%, #2A6A4A 100%);">
+        <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Farshi sharara -->
+          <path d="M55 130 Q20 180 10 270 L95 270 L95 130 Z" fill="rgba(26,74,53,0.8)" stroke="rgba(201,168,76,0.35)" stroke-width="0.5"/>
+          <path d="M145 130 Q180 180 190 270 L105 270 L105 130 Z" fill="rgba(26,74,53,0.8)" stroke="rgba(201,168,76,0.35)" stroke-width="0.5"/>
+          <!-- Kameez -->
+          <path d="M68 90 Q68 75 100 73 Q132 75 132 90 L130 155 Q100 165 70 155 Z" fill="rgba(14,51,38,0.95)" stroke="rgba(201,168,76,0.5)" stroke-width="0.6"/>
+          <!-- Gold zardozi on kameez -->
+          <path d="M80 95 Q100 88 120 95" stroke="rgba(201,168,76,0.6)" stroke-width="1" fill="none"/>
+          <circle cx="100" cy="95" r="2" fill="rgba(201,168,76,0.7)"/>
+          <circle cx="88" cy="105" r="1.5" fill="rgba(201,168,76,0.5)"/>
+          <circle cx="112" cy="105" r="1.5" fill="rgba(201,168,76,0.5)"/>
+          <circle cx="100" cy="115" r="1.5" fill="rgba(201,168,76,0.5)"/>
+          <!-- Border -->
+          <path d="M10 245 Q100 255 190 245" stroke="rgba(201,168,76,0.6)" stroke-width="1.5" fill="none"/>
+          <!-- Dupatta draped -->
+          <path d="M60 85 Q110 60 160 90 Q170 130 155 170" stroke="rgba(26,74,53,0.6)" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <!-- Neck -->
+          <ellipse cx="100" cy="69" rx="10" ry="7" fill="rgba(220,190,160,0.6)"/>
+        </svg>
+      </div>
+      <div class="dress-info">
+        <div class="dress-number">Look 02</div>
+        <div class="dress-name">Emerald Velvet <em>Farshi Sharara</em></div>
+        <div class="dress-details"><span class="dress-color-dot" style="background:#1A4A35;"></span>Deep Emerald · Velvet · Zardozi & Tilla · Jamawar border</div>
+        <a class="dress-link" href="https://uycollection.com/en-us/collections/bridal-farshi" target="_blank">View at UY Collection ↗</a>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="dress-card">
+      <div class="dress-visual" style="background: linear-gradient(160deg, #E8D5B8 0%, #F5EDD8 50%, #EDE0C4 100%);">
+        <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Pishwas gown -->
+          <path d="M65 80 Q50 140 40 270 L160 270 Q150 140 135 80 Z" fill="rgba(237,224,196,0.85)" stroke="rgba(166,124,46,0.5)" stroke-width="0.7"/>
+          <!-- Bodice detail -->
+          <path d="M72 80 Q72 68 100 66 Q128 68 128 80 L122 115 Q100 122 78 115 Z" fill="rgba(221,208,182,0.95)" stroke="rgba(166,124,46,0.6)" stroke-width="0.7"/>
+          <!-- Zardozi on bodice -->
+          <path d="M88 82 Q100 76 112 82 Q112 100 100 105 Q88 100 88 82" fill="none" stroke="rgba(166,124,46,0.7)" stroke-width="0.8"/>
+          <circle cx="100" cy="88" r="3" fill="rgba(166,124,46,0.5)"/>
+          <!-- Scattered stones -->
+          <circle cx="90" cy="92" r="1" fill="rgba(201,168,76,0.7)"/>
+          <circle cx="110" cy="92" r="1" fill="rgba(201,168,76,0.7)"/>
+          <circle cx="95" cy="100" r="1" fill="rgba(201,168,76,0.6)"/>
+          <circle cx="105" cy="100" r="1" fill="rgba(201,168,76,0.6)"/>
+          <!-- Hem border -->
+          <path d="M40 245 Q100 252 160 245" stroke="rgba(166,124,46,0.7)" stroke-width="1.5" fill="none"/>
+          <path d="M42 250 Q100 257 158 250" stroke="rgba(166,124,46,0.4)" stroke-width="0.8" fill="none"/>
+          <!-- Dupatta -->
+          <path d="M42 80 Q15 120 20 210" stroke="rgba(205,185,150,0.5)" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <!-- Neck -->
+          <ellipse cx="100" cy="62" rx="10" ry="7" fill="rgba(220,190,160,0.8)"/>
+        </svg>
+      </div>
+      <div class="dress-info">
+        <div class="dress-number">Look 03</div>
+        <div class="dress-name">Champagne <em>Pishwas Gown</em></div>
+        <div class="dress-details"><span class="dress-color-dot" style="background:#EDE0C4;"></span>Champagne Ivory · Organza · Nakshi & Kaamdani · Pearl hem</div>
+        <a class="dress-link" href="https://sadaffawadkhan.com/collections/bridals" target="_blank">View at Sadaf Fawad Khan ↗</a>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="dress-card">
+      <div class="dress-visual" style="background: linear-gradient(160deg, #350D25 0%, #5C1A4A 55%, #7A2462 100%);">
+        <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Lehenga -->
+          <path d="M55 125 Q25 195 30 270 L170 270 Q175 195 145 125 Z" fill="rgba(74,26,58,0.75)" stroke="rgba(201,168,76,0.4)" stroke-width="0.6"/>
+          <!-- Blouse -->
+          <path d="M74 88 Q74 74 100 72 Q126 74 126 88 L122 125 Q100 135 78 125 Z" fill="rgba(92,26,74,0.95)" stroke="rgba(201,168,76,0.55)" stroke-width="0.6"/>
+          <!-- Heavy zardozi floral on blouse -->
+          <circle cx="100" cy="98" r="10" fill="none" stroke="rgba(201,168,76,0.6)" stroke-width="0.8" stroke-dasharray="2,2"/>
+          <circle cx="100" cy="98" r="5" fill="rgba(201,168,76,0.25)"/>
+          <circle cx="100" cy="98" r="2" fill="rgba(201,168,76,0.7)"/>
+          <!-- Petals -->
+          <circle cx="100" cy="87" r="2" fill="rgba(201,168,76,0.5)"/>
+          <circle cx="100" cy="109" r="2" fill="rgba(201,168,76,0.5)"/>
+          <circle cx="89" cy="98" r="2" fill="rgba(201,168,76,0.5)"/>
+          <circle cx="111" cy="98" r="2" fill="rgba(201,168,76,0.5)"/>
+          <!-- Border -->
+          <path d="M30 242 Q100 250 170 242" stroke="rgba(201,168,76,0.65)" stroke-width="2" fill="none"/>
+          <!-- Neck -->
+          <ellipse cx="100" cy="68" rx="10" ry="7" fill="rgba(220,190,160,0.65)"/>
+          <!-- Matha patti -->
+          <path d="M82 62 Q100 55 118 62" stroke="rgba(201,168,76,0.6)" stroke-width="1" fill="none"/>
+          <circle cx="100" cy="55" r="3" fill="rgba(201,168,76,0.6)"/>
+          <!-- Dupatta -->
+          <path d="M60 84 Q110 65 158 88 Q162 130 150 165" stroke="rgba(92,26,74,0.5)" stroke-width="10" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="dress-info">
+        <div class="dress-number">Look 04</div>
+        <div class="dress-name">Plum Tissue <em>Lehenga Choli</em></div>
+        <div class="dress-details"><span class="dress-color-dot" style="background:#5C1A4A;"></span>Royal Plum · Tissue Lamé · Heavy Zardozi · Swarovski stones</div>
+        <a class="dress-link" href="https://theworldofhsy.com/collections/pakistani-bridal-dresses" target="_blank">View at HSY ↗</a>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="dress-card">
+      <div class="dress-visual" style="background: linear-gradient(160deg, #E8AABB 0%, #F2C4CE 50%, #F8D8E2 100%);">
+        <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Gharara bottom (wide) -->
+          <path d="M30 150 Q10 200 5 270 L95 270 L95 150 Z" fill="rgba(232,170,187,0.75)" stroke="rgba(180,80,120,0.3)" stroke-width="0.5"/>
+          <path d="M170 150 Q190 200 195 270 L105 270 L105 150 Z" fill="rgba(232,170,187,0.75)" stroke="rgba(180,80,120,0.3)" stroke-width="0.5"/>
+          <!-- Kameez -->
+          <path d="M68 88 Q68 74 100 72 Q132 74 132 88 L128 155 Q100 163 72 155 Z" fill="rgba(217,144,168,0.85)" stroke="rgba(180,80,120,0.4)" stroke-width="0.6"/>
+          <!-- Silver zardozi -->
+          <path d="M84 94 Q100 88 116 94" stroke="rgba(220,220,240,0.8)" stroke-width="0.8" fill="none"/>
+          <path d="M86 104 Q100 100 114 104" stroke="rgba(220,220,240,0.6)" stroke-width="0.8" fill="none"/>
+          <circle cx="100" cy="94" r="2" fill="rgba(220,220,240,0.9)"/>
+          <circle cx="100" cy="110" r="1.5" fill="rgba(220,220,240,0.7)"/>
+          <!-- Dupatta over head -->
+          <path d="M60 72 Q100 50 145 78 L148 100 Q100 92 52 100 Z" fill="rgba(242,196,206,0.5)" stroke="rgba(180,80,120,0.2)" stroke-width="0.5"/>
+          <!-- Neck -->
+          <ellipse cx="100" cy="68" rx="10" ry="7" fill="rgba(220,190,160,0.7)"/>
+          <!-- Border -->
+          <path d="M5 244 Q100 252 195 244" stroke="rgba(180,80,120,0.4)" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+      <div class="dress-info">
+        <div class="dress-number">Look 05</div>
+        <div class="dress-name">Blush Net <em>Gharara Set</em></div>
+        <div class="dress-details"><span class="dress-color-dot" style="background:#E8AABB;"></span>Blush Petal · Mysori Net · Silver Zardozi · Pearl & Dabka trim</div>
+        <a class="dress-link" href="https://nainpreet.com/collections/bridal-couture" target="_blank">View at Nainpreet ↗</a>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="dress-card">
+      <div class="dress-visual" style="background: linear-gradient(160deg, #3E0E18 0%, #5C1525 55%, #7A2030 100%);">
+        <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Anarkali pishwas with trail -->
+          <path d="M72 90 Q50 160 35 270 L165 270 Q150 160 128 90 Z" fill="rgba(92,21,37,0.8)" stroke="rgba(201,168,76,0.4)" stroke-width="0.6"/>
+          <!-- Bodice -->
+          <path d="M75 90 Q75 76 100 74 Q125 76 125 90 L120 115 Q100 122 80 115 Z" fill="rgba(74,13,24,0.95)" stroke="rgba(201,168,76,0.6)" stroke-width="0.7"/>
+          <!-- Heavy all-over zardozi on skirt -->
+          <path d="M72 130 Q100 125 128 130" stroke="rgba(201,168,76,0.4)" stroke-width="0.7" fill="none"/>
+          <path d="M65 160 Q100 154 135 160" stroke="rgba(201,168,76,0.35)" stroke-width="0.7" fill="none"/>
+          <path d="M58 190 Q100 183 142 190" stroke="rgba(201,168,76,0.3)" stroke-width="0.7" fill="none"/>
+          <!-- Zardozi flowers scattered -->
+          <circle cx="90" cy="145" r="3" fill="none" stroke="rgba(201,168,76,0.5)" stroke-width="0.6"/>
+          <circle cx="110" cy="145" r="3" fill="none" stroke="rgba(201,168,76,0.5)" stroke-width="0.6"/>
+          <circle cx="100" cy="165" r="3" fill="none" stroke="rgba(201,168,76,0.5)" stroke-width="0.6"/>
+          <!-- Broad daman border -->
+          <path d="M35 240 Q100 252 165 240" stroke="rgba(201,168,76,0.7)" stroke-width="3" fill="none"/>
+          <path d="M35 235 Q100 247 165 235" stroke="rgba(201,168,76,0.3)" stroke-width="1" fill="none"/>
+          <!-- Neck -->
+          <ellipse cx="100" cy="70" rx="10" ry="7" fill="rgba(220,190,160,0.65)"/>
+          <!-- Sleeves hint -->
+          <path d="M75 90 Q55 100 50 120" stroke="rgba(92,21,37,0.8)" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <path d="M125 90 Q145 100 150 120" stroke="rgba(92,21,37,0.8)" stroke-width="10" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="dress-info">
+        <div class="dress-number">Look 06</div>
+        <div class="dress-name">Maroon Wine <em>Farshi Anarkali</em></div>
+        <div class="dress-details"><span class="dress-color-dot" style="background:#5C1525;"></span>Maroon Wine · Raw Silk · All-over Zardozi · Heavy daman border</div>
+        <a class="dress-link" href="https://uycollection.com/en-us/collections/pakistani-bridal-dresses-online" target="_blank">View at UY Collection ↗</a>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="dress-card">
+      <div class="dress-visual" style="background: linear-gradient(160deg, #7A5820 0%, #A67C2E 55%, #C9A84C 100%);">
+        <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Lehenga gown hybrid -->
+          <path d="M60 120 Q30 195 35 270 L165 270 Q170 195 140 120 Z" fill="rgba(166,124,46,0.6)" stroke="rgba(250,240,200,0.3)" stroke-width="0.5"/>
+          <!-- Front open panel -->
+          <path d="M90 120 L90 270 L110 270 L110 120 Z" fill="rgba(201,168,76,0.25)" stroke="rgba(250,240,200,0.2)" stroke-width="0.3"/>
+          <!-- Blouse -->
+          <path d="M74 84 Q74 70 100 68 Q126 70 126 84 L122 120 Q100 128 78 120 Z" fill="rgba(122,88,32,0.95)" stroke="rgba(250,240,200,0.4)" stroke-width="0.6"/>
+          <!-- Dense zardozi on bodice - all gold tone -->
+          <circle cx="100" cy="90" r="12" fill="none" stroke="rgba(250,240,200,0.5)" stroke-width="0.6" stroke-dasharray="1.5,1.5"/>
+          <circle cx="100" cy="90" r="6" fill="rgba(250,240,200,0.2)"/>
+          <circle cx="100" cy="90" r="2.5" fill="rgba(250,240,200,0.7)"/>
+          <!-- Gold scattered -->
+          <circle cx="88" cy="100" r="1.5" fill="rgba(250,240,200,0.6)"/>
+          <circle cx="112" cy="100" r="1.5" fill="rgba(250,240,200,0.6)"/>
+          <circle cx="94" cy="108" r="1.5" fill="rgba(250,240,200,0.5)"/>
+          <circle cx="106" cy="108" r="1.5" fill="rgba(250,240,200,0.5)"/>
+          <!-- Border -->
+          <path d="M35 245 Q100 252 165 245" stroke="rgba(250,240,200,0.5)" stroke-width="2" fill="none"/>
+          <!-- Neck -->
+          <ellipse cx="100" cy="64" rx="10" ry="7" fill="rgba(220,190,160,0.65)"/>
+          <!-- Dupatta -->
+          <path d="M55 78 Q100 58 148 82 Q150 120 138 158" stroke="rgba(166,124,46,0.5)" stroke-width="9" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="dress-info">
+        <div class="dress-number">Look 07</div>
+        <div class="dress-name">Antique Gold <em>Lehenga Gown</em></div>
+        <div class="dress-details"><span class="dress-color-dot" style="background:#A67C2E;"></span>Antique Gold · Tissue Lamé · All-Tonal Zardozi · Pearl hangings at hem</div>
+        <a class="dress-link" href="https://www.nameerabyfarooq.com/collections/pakistani-bridal-dresses" target="_blank">View at Nameera by Farooq ↗</a>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="dress-card">
+      <div class="dress-visual" style="background: linear-gradient(160deg, #B08A60 0%, #C4A07A 50%, #D4B896 100%);">
+        <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Front open pishwas -->
+          <path d="M72 85 Q55 150 50 270 L150 270 Q145 150 128 85 Z" fill="rgba(196,160,122,0.7)" stroke="rgba(120,88,48,0.4)" stroke-width="0.5"/>
+          <!-- Front open panels -->
+          <path d="M72 85 L88 270 L50 270 Z" fill="rgba(176,138,96,0.85)"/>
+          <path d="M128 85 L112 270 L150 270 Z" fill="rgba(176,138,96,0.85)"/>
+          <!-- Choli underneath -->
+          <path d="M76 85 Q76 72 100 70 Q124 72 124 85 L120 110 Q100 118 80 110 Z" fill="rgba(140,105,65,0.9)" stroke="rgba(120,88,48,0.5)" stroke-width="0.6"/>
+          <!-- Minimal zardozi (grand minimalist trend) -->
+          <path d="M88 82 Q100 76 112 82" stroke="rgba(60,40,15,0.6)" stroke-width="0.8" fill="none"/>
+          <circle cx="100" cy="88" r="2" fill="rgba(60,40,15,0.5)"/>
+          <circle cx="92" cy="96" r="1.5" fill="rgba(60,40,15,0.4)"/>
+          <circle cx="108" cy="96" r="1.5" fill="rgba(60,40,15,0.4)"/>
+          <!-- Subtle border on hem -->
+          <path d="M50 250 L150 250" stroke="rgba(120,88,48,0.5)" stroke-width="1.5" fill="none"/>
+          <!-- Neck -->
+          <ellipse cx="100" cy="66" rx="10" ry="7" fill="rgba(220,190,160,0.8)"/>
+        </svg>
+      </div>
+      <div class="dress-info">
+        <div class="dress-number">Look 08</div>
+        <div class="dress-name">Nude Fawn <em>Front Open Pishwas</em></div>
+        <div class="dress-details"><span class="dress-color-dot" style="background:#C4A07A;"></span>Nude Fawn · Banarsi Silk · Restrained Zardozi · The Grand Minimalist</div>
+        <a class="dress-link" href="https://www.sairashakira.com/collections/bridal" target="_blank">View at Saira Shakira ↗</a>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="dress-card">
+      <div class="dress-visual" style="background: linear-gradient(160deg, #8B1850 0%, #A0245A 55%, #C0306A 100%);">
+        <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Silk kurta with trail -->
+          <path d="M68 82 Q55 150 50 270 L150 270 Q145 150 132 82 Z" fill="rgba(160,36,90,0.75)" stroke="rgba(201,168,76,0.4)" stroke-width="0.6"/>
+          <!-- Keyhole neck bodice -->
+          <path d="M74 82 Q74 68 100 66 Q126 68 126 82 L122 120 Q100 128 78 120 Z" fill="rgba(139,24,80,0.95)" stroke="rgba(201,168,76,0.6)" stroke-width="0.7"/>
+          <!-- Keyhole detail -->
+          <ellipse cx="100" cy="76" rx="4" ry="5" fill="rgba(192,48,106,0.4)" stroke="rgba(201,168,76,0.5)" stroke-width="0.5"/>
+          <!-- Dense all-over zardozi cascading down -->
+          <path d="M82 90 Q100 84 118 90 Q118 112 100 116 Q82 112 82 90" fill="none" stroke="rgba(201,168,76,0.65)" stroke-width="0.8"/>
+          <circle cx="100" cy="100" r="3" fill="rgba(201,168,76,0.5)"/>
+          <circle cx="92" cy="96" r="1.5" fill="rgba(201,168,76,0.6)"/>
+          <circle cx="108" cy="96" r="1.5" fill="rgba(201,168,76,0.6)"/>
+          <!-- Mukaish scattered -->
+          <circle cx="85" cy="130" r="1" fill="rgba(201,168,76,0.4)"/>
+          <circle cx="95" cy="138" r="1" fill="rgba(201,168,76,0.4)"/>
+          <circle cx="105" cy="132" r="1" fill="rgba(201,168,76,0.4)"/>
+          <circle cx="115" cy="140" r="1" fill="rgba(201,168,76,0.4)"/>
+          <!-- Net dupatta border -->
+          <path d="M50 250 Q100 258 150 250" stroke="rgba(201,168,76,0.6)" stroke-width="2" fill="none"/>
+          <!-- Neck -->
+          <ellipse cx="100" cy="62" rx="10" ry="7" fill="rgba(220,190,160,0.65)"/>
+          <!-- Matching trouser hint -->
+          <path d="M78 240 L72 270 L90 270 L92 240 Z" fill="rgba(139,24,80,0.7)"/>
+          <path d="M122 240 L128 270 L110 270 L108 240 Z" fill="rgba(139,24,80,0.7)"/>
+        </svg>
+      </div>
+      <div class="dress-info">
+        <div class="dress-number">Look 09</div>
+        <div class="dress-name">Magenta Silk <em>Zardozi Kurta</em></div>
+        <div class="dress-details"><span class="dress-color-dot" style="background:#A0245A;"></span>Magenta Rose · Pure Silk · 200+ hrs Gold Zardozi · Mukaish sequins</div>
+        <a class="dress-link" href="https://www.ainnlondon.com/products/zainab" target="_blank">View at AÏNN London ↗</a>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="dress-card">
+      <div class="dress-visual" style="background: linear-gradient(160deg, #3A8A6A 0%, #6AAE90 50%, #8FC4A8 100%);">
+        <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Sharara with organza -->
+          <path d="M30 145 Q5 195 5 270 L95 270 L95 145 Z" fill="rgba(106,174,144,0.7)" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
+          <path d="M170 145 Q195 195 195 270 L105 270 L105 145 Z" fill="rgba(106,174,144,0.7)" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
+          <!-- Overlay organza sheer layer -->
+          <path d="M28 145 Q5 195 5 270 L40 270 L40 145 Z" fill="rgba(255,255,255,0.12)"/>
+          <path d="M172 145 Q195 195 195 270 L160 270 L160 145 Z" fill="rgba(255,255,255,0.12)"/>
+          <!-- Kameez with jamawar jacket -->
+          <path d="M68 85 Q68 72 100 70 Q132 72 132 85 L128 145 Q100 153 72 145 Z" fill="rgba(58,138,106,0.9)" stroke="rgba(255,255,255,0.35)" stroke-width="0.6"/>
+          <!-- Silver-tone zardozi on mint -->
+          <path d="M84 90 Q100 84 116 90" stroke="rgba(255,255,255,0.65)" stroke-width="0.8" fill="none"/>
+          <circle cx="100" cy="98" r="3" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="0.6"/>
+          <circle cx="100" cy="98" r="1.5" fill="rgba(255,255,255,0.5)"/>
+          <!-- Delicate border -->
+          <path d="M5 248 Q100 255 195 248" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" fill="none"/>
+          <!-- Dupatta -->
+          <path d="M58 80 Q100 60 145 84 Q148 118 136 152" stroke="rgba(106,174,144,0.55)" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <!-- Neck -->
+          <ellipse cx="100" cy="66" rx="10" ry="7" fill="rgba(220,190,160,0.7)"/>
+        </svg>
+      </div>
+      <div class="dress-info">
+        <div class="dress-number">Look 10</div>
+        <div class="dress-name">Mint Sage <em>Organza Sharara</em></div>
+        <div class="dress-details"><span class="dress-color-dot" style="background:#6AAE90;"></span>Mint Sage · Organza + Jamawar · Silver Zardozi · Pastel revolution</div>
+        <a class="dress-link" href="https://www.sairashakira.com/collections/bridal" target="_blank">View at Saira Shakira ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Zardozi Bridal · 2026</div>
+  <div class="ornament">✦ ✦ ✦</div>
+
+  <div class="footer-research">
+    <h4>Research Sources · Pakistani Designers Studied</h4>
+    <ul class="designer-list">
+      <li>HSY</li>
+      <li>Bunto Kazmi</li>
+      <li>Faraz Manan</li>
+      <li>Maria B</li>
+      <li>Elan</li>
+      <li>Saira Shakira</li>
+      <li>Hussain Rehar</li>
+      <li>Suffuse by Sana Yasir</li>
+      <li>Nainpreet</li>
+      <li>Sadaf Fawad Khan</li>
+      <li>Zara Shahjahan</li>
+      <li>Faiza Saqlain</li>
+      <li>Kanwal Malik</li>
+      <li>Nomi Ansari</li>
+      <li>Zainab Chottani</li>
+      <li>Ansab Jahangir</li>
+      <li>AÏNN London (Haris Shakeel–inspired)</li>
+      <li>Nameera by Farooq</li>
+      <li>UY Collection</li>
+    </ul>
+  </div>
+
+  <p class="footer-note">Compiled from designer websites, social media collections & bridal trend reports · January–April 2026 · For reference only</p>
+</footer>
 
 <script>
-  /**
-   * Helper function to attempt fetching an image from a third-party designer site.
-   * If it fails (due to CORS or 404), it catches the error, logs it to the console, 
-   * and falls back to a generated placeholder to preserve the UI layout.
-   */
-  async function applyImageWithFallback(elementId, targetUrl, fallbackUrl, contextName) {
-    const el = document.getElementById(elementId);
-    if (!el) return;
+  // Scroll-triggered fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
 
-    try {
-      // Attempting to fetch directly to trigger the CORS check
-      const response = await fetch(targetUrl, { method: 'HEAD', mode: 'cors' });
-      if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
-      
-      // If successful, apply the designer image
-      el.style.backgroundImage = `url('${targetUrl}')`;
-    } catch (error) {
-      // Log the exact error to the console as requested
-      console.error(`[Image Fetch Error - ${contextName}] Failed to retrieve image from: ${targetUrl}. Reason: Blocked by CORS policy or link unavailable.`, error);
-      
-      // Apply the fallback
-      el.style.backgroundImage = `url('${fallbackUrl}')`;
-    }
-  }
-
-  // --- DATA SETS ---
-  const aesthetics = [
-    { id: 'c1', name: "Classic Red", hex: "8B1A1A", desc: "The eternal barat colour with antique gold zardozi.", mockUrl: "https://theworldofhsy.com/cdn/shop/red-lehenga.jpg" },
-    { id: 'c2', name: "Emerald Green", hex: "1A6B40", desc: "Jewel-tone green on velvet for winter-weddings.", mockUrl: "https://sadaffawadkhan.com/cdn/shop/emerald-velvet.jpg" },
-    { id: 'c3', name: "Ivory & Champagne", hex: "E8D5B0", desc: "Nikah favourite. Tonal silver zardozi on raw silk.", mockUrl: "https://www.sairashakira.com/cdn/shop/ivory-pishwas.jpg" },
-    { id: 'c4', name: "Blush Pink", hex: "F2A0A0", desc: "Soft rose tones paired with dense gold border work.", mockUrl: "https://www.nameerabyfarooq.com/cdn/blush-pink.jpg" },
-    { id: 'c5', name: "Deep Plum", hex: "5C0E7A", desc: "Rich velvet plum with antique gold embroidery.", mockUrl: "https://shaziayasin.com/cdn/plum-gown.jpg" },
-    { id: 'c6', name: "Antique Gold", hex: "C0872A", desc: "All-over tilla and zardozi on gold silk.", mockUrl: "https://theworldofhsy.com/cdn/antique-gold.jpg" },
-    { id: 'c7', name: "Magenta", hex: "C14F6A", desc: "Deep magenta with dense gold kora and dabka.", mockUrl: "https://ainnlondon.com/cdn/magenta-silk.jpg" },
-    { id: 'c8', name: "Ice Blue", hex: "A8C5D8", desc: "Organza in icy pastels with silver zardozi.", mockUrl: "https://www.sairashakira.com/cdn/ice-blue.jpg" },
-    { id: 'c9', name: "Royal Blue", hex: "1A2B5E", desc: "Cobalt velvet with golden tilla embroidery.", mockUrl: "https://sadaffawadkhan.com/cdn/royal-blue.jpg" },
-    { id: 'c10', name: "Midnight Black", hex: "222222", desc: "Deep black organza with all-over gold zardozi.", mockUrl: "https://uycollection.com/cdn/black-organza.jpg" }
-  ];
-
-  const fabrics = [
-    { id: 'f1', name: "Raw Silk", desc: "High-contrast canvas that makes zardozi pop.", mockUrl: "https://designer-fabrics.com/raw-silk-zardozi.jpg" },
-    { id: 'f2', name: "Organza", desc: "Sheer enough to catch light. Carries heavy zardozi.", mockUrl: "https://designer-fabrics.com/organza-detail.jpg" },
-    { id: 'f3', name: "Velvet", desc: "Absorbs light to create moody shadows.", mockUrl: "https://designer-fabrics.com/velvet-gold.jpg" },
-    { id: 'f4', name: "Pure Silk", desc: "Lustrous sheen for dense embroidery.", mockUrl: "https://designer-fabrics.com/pure-silk-kora.jpg" },
-    { id: 'f5', name: "Chiffon", desc: "Lightweight and breathable for heavy embellishments.", mockUrl: "https://designer-fabrics.com/chiffon-dabka.jpg" },
-    { id: 'f6', name: "Jamawar", desc: "Traditional woven fabric with built-in patterns.", mockUrl: "https://designer-fabrics.com/jamawar-heritage.jpg" },
-    { id: 'f7', name: "Khadi Net", desc: "Used for heavily embroidered dupattas.", mockUrl: "https://designer-fabrics.com/khadi-net.jpg" },
-    { id: 'f8', name: "Tissue", desc: "Ultra-lightweight fabric with a built-in shimmer.", mockUrl: "https://designer-fabrics.com/tissue-silver.jpg" },
-    { id: 'f9', name: "Banarsi", desc: "Intricately woven with metallic threads.", mockUrl: "https://designer-fabrics.com/banarsi-zari.jpg" },
-    { id: 'f10', name: "Korean Silk", desc: "Identical drape to pure silk for accessible lines.", mockUrl: "https://designer-fabrics.com/korean-silk.jpg" }
-  ];
-
-  const designersList = ["HSY", "Sadaf Fawad Khan", "Saira Shakira", "Nameera by Farooq", "UY Collection", "Shazia Yasin", "AÏNN London", "Bunto Kazmi"];
-  const stylesList = ["Lehenga Choli", "Pishwas", "Gharara", "Farshi Sharara", "Anarkali", "Bridal Gown"];
-
-  // --- RENDER COLORS ---
-  const colorContainer = document.getElementById('color-container');
-  aesthetics.forEach((color, i) => {
-    const num = String(i + 1).padStart(2, '0');
-    const fallback = `https://placehold.co/400x600/${color.hex}/E8C97A?text=${color.name.split(' ').join('+')}`;
-    
-    colorContainer.innerHTML += `
-      <div class="color-card">
-        <div class="color-swatch" id="color-img-${i}">
-          <span class="zardozi-badge">Zardozi ✦</span>
-        </div>
-        <div class="color-info">
-          <div class="color-number">${num}</div>
-          <div class="color-name">${color.name}</div>
-          <div class="color-desc">${color.desc}</div>
-        </div>
-      </div>
-    `;
-    // Attempt fetch
-    applyImageWithFallback(`color-img-${i}`, color.mockUrl, fallback, `Color: ${color.name}`);
-  });
-
-  // --- RENDER FABRICS ---
-  const fabricContainer = document.getElementById('fabric-container');
-  fabrics.forEach((fab, i) => {
-    const num = String(i + 1).padStart(2, '0');
-    const fallback = `https://placehold.co/400x300/18130C/C9A84C?text=${fab.name.split(' ').join('+')}`;
-
-    fabricContainer.innerHTML += `
-      <div class="fabric-card" data-num="${num}">
-        <div class="fabric-visual" id="fab-img-${i}"></div>
-        <div class="fabric-info">
-          <div class="fabric-name">${fab.name}</div>
-          <div class="fabric-desc">${fab.desc}</div>
-        </div>
-      </div>
-    `;
-    applyImageWithFallback(`fab-img-${i}`, fab.mockUrl, fallback, `Fabric: ${fab.name}`);
-  });
-
-  // --- RENDER 50 DRESSES ---
-  const dressContainer = document.getElementById('dresses-container');
-  for (let i = 0; i < 50; i++) {
-    const ast = aesthetics[i % aesthetics.length];
-    const des = designersList[(i * 3) % designersList.length];
-    const sty = stylesList[(i * 2) % stylesList.length];
-    const fab = fabrics[(i * 5) % fabrics.length].name;
-    
-    const dressName = `${ast.name} ${fab} ${sty}`;
-    const mockUrl = `https://api.designer-catalog.com/v1/dresses/${des.replace(/\s+/g, '').toLowerCase()}/img-${i}.jpg`;
-    const fallback = `https://placehold.co/400x500/${ast.hex}/E8C97A?text=${sty.split(' ').join('+')}`;
-    const id = `dress-img-${i}`;
-
-    dressContainer.innerHTML += `
-      <a class="dress-card" href="javascript:void(0)">
-        <div class="dress-visual" id="${id}"></div>
-        <div class="dress-info">
-          <span class="dress-color-dot" style="background:#${ast.hex};"></span>
-          <span class="dress-color-label">${ast.name}</span>
-          <div class="dress-name">${dressName} — ${des}</div>
-          <div class="dress-detail">Featuring dense zardozi and kora work on premium ${fab.toLowerCase()}.</div>
-        </div>
-      </a>
-    `;
-    applyImageWithFallback(id, mockUrl, fallback, `Dress ${i+1}: ${dressName}`);
-  }
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
-
 </body>
 </html>
